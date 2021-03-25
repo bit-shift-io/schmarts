@@ -4,9 +4,9 @@ from .device import Device
 
 class BroadlinkDevice(Device):
     
-    def name(self):
-        return "BroadlinkDevice.name"
-
+    def send_data(self, data: bytes) -> None:
+        self.device.auth()
+        self.device.send_data(data)
 
 
 class Broadlink(Driver):
@@ -17,9 +17,6 @@ class Broadlink(Driver):
         device_list = []
         for device in devices:
             device_list.append(BroadlinkDevice(self, device))
-
-        #key = devices[0].auth()
-        #print(key)
 
         return device_list
 

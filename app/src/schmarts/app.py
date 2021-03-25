@@ -31,43 +31,15 @@ class Schmarts(toga.App):
                 button = toga.Button(str(device), on_press=partial(self.on_device_press, device=device)) #self.on_device_press)
                 devices_box.add(button)
 
-
-
-        name_label = toga.Label(
-            'Your name: ',
-            style=Pack(padding=(0, 5))
-        )
-        self.name_input = toga.TextInput(style=Pack(flex=1))
-
-        name_box = toga.Box(style=Pack(direction=ROW, padding=5))
-        name_box.add(name_label)
-        name_box.add(self.name_input)
-
-        button = toga.Button(
-            'Say Hello!',
-            on_press=self.say_hello,
-            style=Pack(padding=5)
-        )
-
-        main_box.add(name_box)
-        main_box.add(button)
         main_box.add(devices_box)
 
         self.main_window = toga.MainWindow(title=self.formal_name)
         self.main_window.content = main_box
         self.main_window.show()
 
-    def say_hello(self, widget):
-        self.main_window.info_dialog(
-            'Hi there!',
-            "Hello, {}".format(self.name_input.value)
-        )
-
     def on_device_press(self, button, device=None):
-        self.main_window.info_dialog(
-            'Device pressed',
-            "{}".format(str(device))
-        )
+        # for now we send the command to toggle the BOSE power
+        device.send_data(bytearray.fromhex('26004800000127941212123712121237123712371212123712371237121212371212121212371212121212121237123712121212123712121237123712121212123712371212123712000501'))
 
 
 
