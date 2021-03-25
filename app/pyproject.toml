@@ -1,0 +1,49 @@
+[tool.briefcase]
+project_name = "Schmarts"
+bundle = "io.bitshift.schmarts"
+version = "0.0.1"
+url = "http://bitshift.rf.gd/"
+license = "BSD license"
+author = 'Fabian Mathews'
+author_email = "supagu@gmail.com"
+
+[tool.briefcase.app.schmarts]
+formal_name = "Schmarts"
+description = "Open source cross-platform app to drive smart/IoT devices"
+icon = "src/schmarts/resources/schmarts"
+sources = ['src/schmarts']
+requires = []
+
+
+[tool.briefcase.app.schmarts.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.schmarts.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev20',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.schmarts.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev20',
+]
+
+# Mobile deployments
+[tool.briefcase.app.schmarts.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.schmarts.android]
+requires = [
+    'toga-android>=0.3.0.dev20',
+]

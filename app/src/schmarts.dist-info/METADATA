@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Briefcase-Version: 0.3.5
+Name: schmarts
+Formal-Name: Schmarts
+App-ID: io.bitshift.schmarts.schmarts
+Version: 0.0.1
+Home-page: http://bitshift.rf.gd/
+Author: Fabian Mathews
+Author-email: supagu@gmail.com
+Summary: Open source cross-platform app to drive smart/IoT devices
