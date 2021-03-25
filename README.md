@@ -47,8 +47,10 @@ After installing, you are ready to develop:
 
     source beeware-venv/bin/activate
     cd app
-    briefcase dev
 
+Now run the app via:
+
+    briefcase dev
 
 # TODO/Wishlist
 
