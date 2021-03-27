@@ -14,6 +14,7 @@ source beeware-venv/bin/activate
 # install deps into the virtual env
 python -m pip install briefcase
 python -m pip install broadlink
+python -m pip install pysonofflan
 
 # start a new project from scratch:
 #   source beeware-venv/bin/activate

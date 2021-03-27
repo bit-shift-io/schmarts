@@ -1,3 +1,4 @@
+import asyncio
 
 class Device():
 
@@ -9,5 +10,5 @@ class Device():
         """Return a readable representation of the device."""
         return "%s %s" % (str(self.driver), str(self.device))
 
-    def send_data(self, data: bytes) -> None:
+    async def send_data(self, data: bytes) -> None:
         print("TODO: implement device.send_data")

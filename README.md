@@ -63,3 +63,5 @@ Want to contribute? Here is a list of major systems we want to implement at some
 - Addition of pre-existing devices such as air conditioners, TV's
 - Standard python library so other people can use what we have done outside of our app
 - Plugin support
+- OTA updates
+- Automation/scheduling
