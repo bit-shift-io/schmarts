@@ -54,9 +54,10 @@ class Schmarts(toga.App):
 
 
     async def on_device_press(self, button):
-        print("device pressed: %s" % button.device)
+        device = button.device
+        print("device pressed: %s" % device)
         # for now we send the command to toggle the BOSE power
-        #device.send_data(bytearray.fromhex('26004800000127941212123712121237123712371212123712371237121212371212121212371212121212121237123712121212123712121237123712121212123712371212123712000501'))
+        await device.send_data(bytearray.fromhex('26004800000127941212123712121237123712371212123712371237121212371212121212371212121212121237123712121212123712121237123712121212123712371212123712000501'))
 
 
 

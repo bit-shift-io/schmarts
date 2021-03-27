@@ -6,7 +6,17 @@
 # set up a virtual environment for beeware
 cd ..
 
+
+cd app/src/schmarts
+rm -rf sonoffLAN
+git clone git@github.com:AlexxIT/SonoffLAN.git
+mv SonoffLAN/custom_components/sonoff sonoffLAN2
+rm -rf SonoffLAN
+mv sonoffLAN2 sonoffLAN
+cd ../../..
+
 python3 -m venv beeware-venv
+
 
 # activate the virtual environment
 source beeware-venv/bin/activate
@@ -15,6 +25,11 @@ source beeware-venv/bin/activate
 python -m pip install briefcase
 python -m pip install broadlink
 python -m pip install pysonofflan
+
+# for AlexxIT/SonoffLAN.git
+python -m pip install homeassistant
+python -m pip install pycrypto
+python -m pip install zeroconf
 
 # start a new project from scratch:
 #   source beeware-venv/bin/activate
