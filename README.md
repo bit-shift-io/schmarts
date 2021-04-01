@@ -1,3 +1,5 @@
+This project is on hold due to: https://github.com/beeware/briefcase/issues/471
+
 # Schmarts
 Open source cross-platform app to drive smart/IoT devices
 
