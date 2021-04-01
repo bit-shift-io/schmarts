@@ -67,3 +67,11 @@ Want to contribute? Here is a list of major systems we want to possibly implemen
 - Automation/scheduling
 - Web interface/cli for desktop
 - Official SDK integrations
+
+
+# Useful Links
+
+## Tuya Links
+
+https://github.com/PaulAnnekov/tuyaha
+https://github.com/dev-est/tuya_tray

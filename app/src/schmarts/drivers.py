@@ -1,9 +1,11 @@
 from .broadlink import Broadlink
 from .sonoff import Sonoff
+from .tuya import Tuya
 
 DRIVERS = {
     "Broadlink": Broadlink(),
-    "Sonoff": Sonoff()
+    "Sonoff": Sonoff(),
+    "Tuya": Tuya()
 }
 
 def get_driver_names():

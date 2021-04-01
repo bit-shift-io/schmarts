@@ -70,7 +70,7 @@ class Sonoff(Driver):
         device_list = []
         for ip, found_device_id in found_devices:
             dev = self.create_device({"host": ip})
-            device_list.append(SonoffDevice(self, dev))
+            device_list.append(dev)
 
         return device_list
 

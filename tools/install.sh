@@ -20,16 +20,22 @@ python3 -m venv beeware-venv
 
 # activate the virtual environment
 source beeware-venv/bin/activate
+cd app
 
 # install deps into the virtual env
 python -m pip install briefcase
 python -m pip install broadlink
 python -m pip install pysonofflan
+python -m pip install tinytuya
+python -m pip install git+https://github.com/PaulAnnekov/tuyaha.git
 
 # for AlexxIT/SonoffLAN.git
 python -m pip install homeassistant
 python -m pip install pycrypto
 python -m pip install zeroconf
+
+# update briefcase with python deps (https://github.com/beeware/beeware/issues/75#issuecomment-811598681)
+briefcase update -d
 
 # start a new project from scratch:
 #   source beeware-venv/bin/activate
