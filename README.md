@@ -54,7 +54,7 @@ Now run the app via:
 
 # TODO/Wishlist
 
-Want to contribute? Here is a list of major systems we want to implement at some stage:
+Want to contribute? Here is a list of major systems we want to possibly implement at some stage:
 
 - Automatic device discovery
 - AP mode to make the app able to connect to a smart device in AP mode and send it the wifi ssid and password
@@ -65,3 +65,5 @@ Want to contribute? Here is a list of major systems we want to implement at some
 - Plugin support
 - OTA updates
 - Automation/scheduling
+- Web interface/cli for desktop
+- Official SDK integrations

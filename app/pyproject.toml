@@ -12,7 +12,9 @@ formal_name = "Schmarts"
 description = "Open source cross-platform app to drive smart/IoT devices"
 icon = "src/schmarts/resources/schmarts"
 sources = ['src/schmarts']
-requires = []
+requires = [
+    'broadlink>=0.17.0'
+]
 
 
 [tool.briefcase.app.schmarts.macOS]
